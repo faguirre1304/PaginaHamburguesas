@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --letraTitulos: "Alfa Slab One", cursive;
+  --letraTextos: "Lato", sans-serif;
+  --letraSubtitulos: "Bebas Neue", sans-serif;
+
+  --colorBotones: #e84545;
+  --colorTitulos: #45270a;
+  --colorEnjoy: #d5c622;
+}
+
+.container {
+  padding-top: 4rem;
+  max-width: 1200px;
+}
+
+.hero {
+  height: 100vh;
+  background-image: linear-gradient(
+      120deg,
+      rgb(251, 255, 43, 0.5) 0%,
+      rgb(255, 185, 63, 0.5) 100%
+    ),
+    url(../img/hero-pattern.jpg);
+  background-position: center center;
+}
+
+.hero__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+.hero__header .logo {
+  color: var(--colorTitulos);
+  font-size: 2.5rem;
+  font-weight: 600;
+  font-family: var(--letraSubtitulos);
+  letter-spacing: 2px;
+}
+
+.hero__header a {
+  text-decoration: none;
+}
+
+.hero__menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1.5rem;
+}
+
+.menu__items {
+  display: flex;
+  list-style: none;
+  gap: 2.5rem;
+}
+
+.hero__menu h4 {
+  font-size: 1.2rem;
+  font-family: var(--letraTextos);
+  color: var(--colorTitulos);
+}
+.menu__items .item {
+  font-family: var(--letraSubtitulos);
+  font-size: 1.5rem;
+  letter-spacing: 4px;
+}
+
+.menu__items .item a {
+  text-decoration: none;
+  color: var(--colorTitulos);
+}
+
+.hero__main {
+  height: calc(100vh - 143.2px);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 6rem;
+}
+
+.hero__text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  justify-content: center;
+  color: var(--colorTitulos);
+  gap: 1rem;
+}
+
+.hero__text h2 {
+  font-family: var(--letraTitulos);
+  font-size: 7rem;
+  text-shadow: 4px 4px 6px #f2f2f2;
+}
+
+.hero__text h3 {
+  font-family: var(--letraTitulos);
+  font-size: 4rem;
+  text-shadow: 4px 4px 6px #f2f2f2;
+}
+
+.hero__text p {
+  font-family: var(--letraTextos);
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  border: 2px dashed var(--colorTitulos);
+  font-weight: 400;
+  width: max-content;
+}
+
+.hero__img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero__img img {
+  min-width: 580px;
+}
+
+.hero__sale {
+  position: absolute;
+  left: 7rem;
+  bottom: 2rem;
+  min-width: 100px;
+  min-height: 100px;
+  background-color: var(--colorBotones);
+  padding: 1.5rem;
+  border-radius: 50%;
+  border: 4px dashed #f2f2f2;
+  outline: 5px solid var(--colorBotones);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 1;
+  font-family: var(--letraSubtitulos);
+}
+
+.price,
+.only,
+.price small {
+  color: #f2f2f2;
+}
+
+.price {
+  font-size: 4rem;
+  font-family: var(--letraSubtitulos);
+}
+
+.price small {
+  font-size: 3rem;
+}
+
+.only {
+  font-size: 3.2rem;
+  letter-spacing: 5px;
+}
+
+/*TRY*/
