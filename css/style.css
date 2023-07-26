@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -202,9 +203,12 @@
   grid-template-areas:
     "burger1 burger2"
     "burger1 burger3";
+  transition: all 1.2s ease;
+  opacity: 0;
+  transform: translateX(1000px);
 }
 
-.try__grid .item {
+.try__grid .try__item {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -229,18 +233,28 @@
   grid-area: burger3;
 }
 
-.try__grid .item p {
+.try__grid .try__item p {
   font-family: var(--letraTextos);
   font-size: 20.8px;
   font-weight: 500;
   letter-spacing: 0.1875rem;
 }
 
-.try__grid .item h3 {
+.try__grid .try__item h3 {
   font-size: 36.8px;
   font-family: var(--letraSubtitulos);
   letter-spacing: 0.3125rem;
   line-height: 1;
+}
+
+/* try js classes */
+
+.try__grid .try__item {
+}
+
+.aparecer__tarjeta {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* enjoy */
@@ -259,6 +273,7 @@
   gap: 24px;
   align-items: center;
   text-align: center;
+  transition: opacity 1.2s ease;
 }
 
 .enjoy__text h3 {
@@ -287,6 +302,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  transition: opacity 1.2s ease;
 }
 
 .enjoy__cards .card {
@@ -405,7 +421,7 @@
 .carrusel__text p {
   font-family: var(--letraTextos);
   color: var(--colorTitulos);
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   padding-top: 2rem;
 }
 
@@ -414,7 +430,7 @@
   display: flex;
   justify-content: space-between;
   gap: 0.5rem;
-  left: 4rem;
+  left: 5rem;
   bottom: 2rem;
   list-style: none;
 }
