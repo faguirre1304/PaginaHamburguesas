@@ -261,7 +261,7 @@
 
 .enjoy {
   margin: auto;
-  padding: 48px 0;
+  padding: 3rem 0;
 
   display: flex;
   flex-direction: column;
@@ -287,7 +287,8 @@
 
 .enjoy__text h2 {
   font-family: var(--letraTitulos);
-  font-size: 64px;
+  font-size: 4rem;
+
   color: var(--colorTitulos);
 }
 
@@ -446,4 +447,152 @@
 
 .carrusel__dots .dotActivo {
   background-color: #f5ad39;
+}
+
+/* RESERVATION SECTION */
+
+.reservation {
+  text-align: center;
+  padding-top: 3rem;
+  position: relative;
+}
+.reservation__img1 {
+  position: absolute;
+  width: 100px;
+  top: 150px;
+  left: 200px;
+  transform: rotate(50deg);
+}
+
+.reservation__img2 {
+  position: absolute;
+  width: 700px;
+  left: 1500px;
+  top: 150px;
+}
+
+.reservation__text h3 {
+  font-family: var(--letraTextos);
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  color: var(--colorTitulos);
+}
+
+.reservation__text h2 {
+  font-family: var(--letraTitulos);
+  font-size: 4rem;
+  color: var(--colorTitulos);
+  margin: 1rem 0 3rem 0;
+}
+
+.reservation__form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.form__input {
+  padding: 1.5rem;
+  border-radius: 7px;
+  font-family: var(--letraTextos);
+  font-size: 1rem;
+  color: #462b12;
+  border: 1px solid var(--colorTitulos);
+}
+
+.form__submit {
+  border-radius: 7px;
+  font-family: var(--letraTitulos);
+  font-size: 1.5rem;
+
+  color: #f2f2f2;
+  border: none;
+  background-color: var(--colorBotones);
+  cursor: pointer;
+}
+
+/* FOOTER SECCTION */
+
+.footer {
+  max-width: 1400px;
+  padding: 2.5rem;
+  margin: 7rem auto 0 auto;
+  color: #f2f2f2;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../img/footer.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+  font-family: var(--letraTextos);
+}
+
+.footer__primary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__text--left {
+  max-width: 45%;
+  display: flex;
+
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.footer__text--left h2 {
+  font-family: var(--letraSubtitulos);
+  font-size: 3.5rem;
+  letter-spacing: 0.5rem;
+}
+
+.footer__text--left p {
+  font-size: 1.1rem;
+  font-family: var(--letraTextos);
+  max-width: 500px;
+  line-height: 1.3rem;
+}
+
+.footer__text--right {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: left;
+  justify-content: center;
+}
+
+.footer__text--right i {
+  font-size: 2rem;
+  margin-right: 1rem;
+  vertical-align: middle;
+}
+
+.footer__secundary {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__social {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.footer__social i {
+  cursor: pointer;
+}
+
+.footer__social i {
+  font-size: 2rem;
+}
+
+.footer__autor {
 }
